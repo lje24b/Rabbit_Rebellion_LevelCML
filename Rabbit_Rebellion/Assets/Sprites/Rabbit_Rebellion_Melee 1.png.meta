@@ -1,0 +1,494 @@
+fileFormatVersion: 2
+guid: 2d214b08901144e4c8dd1db432e77ff4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2875114505303589743
+    second: Rabbit_Rebellion_Melee 1_0
+  - first:
+      213: 4929937563932681483
+    second: Rabbit_Rebellion_Melee 1_1
+  - first:
+      213: 8531931336767011130
+    second: Rabbit_Rebellion_Melee 1_2
+  - first:
+      213: -1567295577615094705
+    second: Rabbit_Rebellion_Melee 1_3
+  - first:
+      213: 1912786608310425331
+    second: Rabbit_Rebellion_Melee 1_4
+  - first:
+      213: -3155163023213220004
+    second: Rabbit_Rebellion_Melee 1_5
+  - first:
+      213: -2487065398128361454
+    second: Rabbit_Rebellion_Melee 1_6
+  - first:
+      213: -4384565616828916803
+    second: Rabbit_Rebellion_Melee 1_7
+  - first:
+      213: -4774160670132534159
+    second: Rabbit_Rebellion_Melee 1_8
+  - first:
+      213: -5616008872362414129
+    second: Rabbit_Rebellion_Melee 1_9
+  - first:
+      213: -8999099966916982960
+    second: Rabbit_Rebellion_Melee 1_10
+  - first:
+      213: 7895426718086515846
+    second: Rabbit_Rebellion_Melee 1_11
+  - first:
+      213: -3585754196306426287
+    second: Rabbit_Rebellion_Melee 1_12
+  - first:
+      213: 4842876214456219611
+    second: Rabbit_Rebellion_Melee 1_13
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Rabbit_Rebellion_Melee 1_0
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 194
+        width: 38
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f638139d86576e720800000000000000
+      internalID: 2875114505303589743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rabbit_Rebellion_Melee 1_1
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 194
+        width: 38
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b05ef0f2818aa6440800000000000000
+      internalID: 4929937563932681483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rabbit_Rebellion_Melee 1_2
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 194
+        width: 38
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a397500c852876670800000000000000
+      internalID: 8531931336767011130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rabbit_Rebellion_Melee 1_3
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 194
+        width: 42
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4c263ed9f8df3ae0800000000000000
+      internalID: -1567295577615094705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rabbit_Rebellion_Melee 1_4
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 130
+        width: 41
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f6977f29459b8a10800000000000000
+      internalID: 1912786608310425331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rabbit_Rebellion_Melee 1_5
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 130
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5fade872fb9634d0800000000000000
+      internalID: -3155163023213220004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rabbit_Rebellion_Melee 1_6
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 130
+        width: 45
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 210c46b823b2c7dd0800000000000000
+      internalID: -2487065398128361454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rabbit_Rebellion_Melee 1_7
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 130
+        width: 37
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbb558a4dc4e623c0800000000000000
+      internalID: -4384565616828916803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rabbit_Rebellion_Melee 1_8
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 66
+        width: 44
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1740c144a26cebdb0800000000000000
+      internalID: -4774160670132534159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rabbit_Rebellion_Melee 1_9
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 66
+        width: 62
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcf656b7fadef02b0800000000000000
+      internalID: -5616008872362414129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rabbit_Rebellion_Melee 1_10
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 66
+        width: 44
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0570fa56246cc1380800000000000000
+      internalID: -8999099966916982960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rabbit_Rebellion_Melee 1_11
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 66
+        width: 38
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68ccca1b4c0329d60800000000000000
+      internalID: 7895426718086515846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rabbit_Rebellion_Melee 1_12
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 2
+        width: 38
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1560a4d7e87dc3ec0800000000000000
+      internalID: -3585754196306426287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rabbit_Rebellion_Melee 1_13
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 2
+        width: 38
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd7f9d5224a553340800000000000000
+      internalID: 4842876214456219611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Rabbit_Rebellion_Melee 1_0: 2875114505303589743
+      Rabbit_Rebellion_Melee 1_1: 4929937563932681483
+      Rabbit_Rebellion_Melee 1_10: -8999099966916982960
+      Rabbit_Rebellion_Melee 1_11: 7895426718086515846
+      Rabbit_Rebellion_Melee 1_12: -3585754196306426287
+      Rabbit_Rebellion_Melee 1_13: 4842876214456219611
+      Rabbit_Rebellion_Melee 1_2: 8531931336767011130
+      Rabbit_Rebellion_Melee 1_3: -1567295577615094705
+      Rabbit_Rebellion_Melee 1_4: 1912786608310425331
+      Rabbit_Rebellion_Melee 1_5: -3155163023213220004
+      Rabbit_Rebellion_Melee 1_6: -2487065398128361454
+      Rabbit_Rebellion_Melee 1_7: -4384565616828916803
+      Rabbit_Rebellion_Melee 1_8: -4774160670132534159
+      Rabbit_Rebellion_Melee 1_9: -5616008872362414129
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
