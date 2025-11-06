@@ -1,0 +1,728 @@
+fileFormatVersion: 2
+guid: b8ac0d9d5a8408d438314c1179b01c4a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5253634668167465889
+    second: Rabbit_Rebellion_Jump_Midair_Spritesheet_0
+  - first:
+      213: -6475404798892408394
+    second: Rabbit_Rebellion_Jump_Midair_Spritesheet_1
+  - first:
+      213: 8571860861537931380
+    second: Rabbit_Rebellion_Jump_Midair_Spritesheet_2
+  - first:
+      213: -2948064434380631918
+    second: Rabbit_Rebellion_Jump_Midair_Spritesheet_3
+  - first:
+      213: 4302770186269267284
+    second: Rabbit_Rebellion_Jump_Midair_Spritesheet_4
+  - first:
+      213: 7069011593133137937
+    second: Rabbit_Rebellion_Jump_Midair_Spritesheet_5
+  - first:
+      213: -2505941483537774991
+    second: Rabbit_Rebellion_Jump_Midair_Spritesheet_6
+  - first:
+      213: 4366856789075015820
+    second: Rabbit_Rebellion_Jump_Midair_Spritesheet_7
+  - first:
+      213: -6205144619365138577
+    second: Rabbit_Rebellion_Jump_Midair_Spritesheet_8
+  - first:
+      213: -5069340366222665985
+    second: Rabbit_Rebellion_Jump_Midair_Spritesheet_9
+  - first:
+      213: 6867703970727491445
+    second: Rabbit_Rebellion_Jump_Midair_Spritesheet_10
+  - first:
+      213: 8493342418360169455
+    second: Rabbit_Rebellion_Jump_Midair_Spritesheet_11
+  - first:
+      213: -3859728960510510612
+    second: Rabbit_Rebellion_Jump_Midair_Spritesheet_12
+  - first:
+      213: 998958087247381901
+    second: Rabbit_Rebellion_Jump_Midair_Spritesheet_13
+  - first:
+      213: -4876901233320097474
+    second: Rabbit_Rebellion_Jump_Midair_Spritesheet_14
+  - first:
+      213: -2069325314016945974
+    second: Rabbit_Rebellion_Jump_Midair_Spritesheet_15
+  - first:
+      213: -6076347157247737048
+    second: Rabbit_Rebellion_Jump_Midair_Spritesheet_16
+  - first:
+      213: -7141618041054825440
+    second: Rabbit_Rebellion_Jump_Midair_Spritesheet_17
+  - first:
+      213: 1345672664094980697
+    second: Rabbit_Rebellion_Jump_Midair_Spritesheet_18
+  - first:
+      213: 7714491818864233013
+    second: Rabbit_Rebellion_Jump_Midair_Spritesheet_19
+  - first:
+      213: 8092028504195526539
+    second: Rabbit_Rebellion_Jump_Midair_Spritesheet_20
+  - first:
+      213: 1122465192499668735
+    second: Rabbit_Rebellion_Jump_Midair_Spritesheet_21
+  - first:
+      213: 2463800018826476709
+    second: Rabbit_Rebellion_Jump_Midair_Spritesheet_22
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Rabbit_Rebellion_Jump_Midair_Spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ab8ccf45e8a8e840800000000000000
+      internalID: 5253634668167465889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rabbit_Rebellion_Jump_Midair_Spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b18821c4adb226a0800000000000000
+      internalID: -6475404798892408394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rabbit_Rebellion_Jump_Midair_Spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 470da04b90e55f670800000000000000
+      internalID: 8571860861537931380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rabbit_Rebellion_Jump_Midair_Spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29097c5340f5617d0800000000000000
+      internalID: -2948064434380631918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rabbit_Rebellion_Jump_Midair_Spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45598b6ffa286bb30800000000000000
+      internalID: 4302770186269267284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rabbit_Rebellion_Jump_Midair_Spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 110a1d9379c2a1260800000000000000
+      internalID: 7069011593133137937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rabbit_Rebellion_Jump_Midair_Spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 176c0dd6f7b193dd0800000000000000
+      internalID: -2505941483537774991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rabbit_Rebellion_Jump_Midair_Spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c88b1d1fc113a9c30800000000000000
+      internalID: 4366856789075015820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rabbit_Rebellion_Jump_Midair_Spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6f70de48d5e2e9a0800000000000000
+      internalID: -6205144619365138577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rabbit_Rebellion_Jump_Midair_Spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff6dfb1abc516a9b0800000000000000
+      internalID: -5069340366222665985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rabbit_Rebellion_Jump_Midair_Spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57770cdef5cfe4f50800000000000000
+      internalID: 6867703970727491445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rabbit_Rebellion_Jump_Midair_Spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe37d1a0ee96ed570800000000000000
+      internalID: 8493342418360169455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rabbit_Rebellion_Jump_Midair_Spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce9bb7bc5fc7f6ac0800000000000000
+      internalID: -3859728960510510612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rabbit_Rebellion_Jump_Midair_Spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8542ef66130ddd00800000000000000
+      internalID: 998958087247381901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rabbit_Rebellion_Jump_Midair_Spritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e398a4fca24c15cb0800000000000000
+      internalID: -4876901233320097474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rabbit_Rebellion_Jump_Midair_Spritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac8db4537974843e0800000000000000
+      internalID: -2069325314016945974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rabbit_Rebellion_Jump_Midair_Spritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8234b40547a7caba0800000000000000
+      internalID: -6076347157247737048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rabbit_Rebellion_Jump_Midair_Spritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 024f765ca30e3ec90800000000000000
+      internalID: -7141618041054825440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rabbit_Rebellion_Jump_Midair_Spritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95ab557882acca210800000000000000
+      internalID: 1345672664094980697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rabbit_Rebellion_Jump_Midair_Spritesheet_19
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53a4f06af616f0b60800000000000000
+      internalID: 7714491818864233013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rabbit_Rebellion_Jump_Midair_Spritesheet_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8fe8e81d09ac4070800000000000000
+      internalID: 8092028504195526539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rabbit_Rebellion_Jump_Midair_Spritesheet_21
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff6eeaf352cc39f00800000000000000
+      internalID: 1122465192499668735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rabbit_Rebellion_Jump_Midair_Spritesheet_22
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5acb0c7301d213220800000000000000
+      internalID: 2463800018826476709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 1dfaf5b06d53af14ab1fda67f707eef7
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Rabbit_Rebellion_Jump_Midair_Spritesheet_0: 5253634668167465889
+      Rabbit_Rebellion_Jump_Midair_Spritesheet_1: -6475404798892408394
+      Rabbit_Rebellion_Jump_Midair_Spritesheet_10: 6867703970727491445
+      Rabbit_Rebellion_Jump_Midair_Spritesheet_11: 8493342418360169455
+      Rabbit_Rebellion_Jump_Midair_Spritesheet_12: -3859728960510510612
+      Rabbit_Rebellion_Jump_Midair_Spritesheet_13: 998958087247381901
+      Rabbit_Rebellion_Jump_Midair_Spritesheet_14: -4876901233320097474
+      Rabbit_Rebellion_Jump_Midair_Spritesheet_15: -2069325314016945974
+      Rabbit_Rebellion_Jump_Midair_Spritesheet_16: -6076347157247737048
+      Rabbit_Rebellion_Jump_Midair_Spritesheet_17: -7141618041054825440
+      Rabbit_Rebellion_Jump_Midair_Spritesheet_18: 1345672664094980697
+      Rabbit_Rebellion_Jump_Midair_Spritesheet_19: 7714491818864233013
+      Rabbit_Rebellion_Jump_Midair_Spritesheet_2: 8571860861537931380
+      Rabbit_Rebellion_Jump_Midair_Spritesheet_20: 8092028504195526539
+      Rabbit_Rebellion_Jump_Midair_Spritesheet_21: 1122465192499668735
+      Rabbit_Rebellion_Jump_Midair_Spritesheet_22: 2463800018826476709
+      Rabbit_Rebellion_Jump_Midair_Spritesheet_3: -2948064434380631918
+      Rabbit_Rebellion_Jump_Midair_Spritesheet_4: 4302770186269267284
+      Rabbit_Rebellion_Jump_Midair_Spritesheet_5: 7069011593133137937
+      Rabbit_Rebellion_Jump_Midair_Spritesheet_6: -2505941483537774991
+      Rabbit_Rebellion_Jump_Midair_Spritesheet_7: 4366856789075015820
+      Rabbit_Rebellion_Jump_Midair_Spritesheet_8: -6205144619365138577
+      Rabbit_Rebellion_Jump_Midair_Spritesheet_9: -5069340366222665985
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
