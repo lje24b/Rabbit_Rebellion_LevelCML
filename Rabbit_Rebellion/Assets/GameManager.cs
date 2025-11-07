@@ -4,10 +4,10 @@ using TMPro;
 public class GameManager : MonoBehaviour
 {
     public int numberOfKeys = 0;
-    public int numberOfCoins = 0;
+    public int numberOfSeeds = 0;
 
     public TextMeshProUGUI keyText;
-    public TextMeshProUGUI coinText;
+    public TextMeshProUGUI seedText;
 
     public AudioSource audioSource;
     public AudioClip keyClip;
@@ -24,6 +24,6 @@ public class GameManager : MonoBehaviour
     {
         keyText.text = "Keys Found: " + numberOfKeys;
 
-        coinText.text = "Coins Stolen: " + numberOfCoins;
+        seedText.text = "Seeds Stolen: " + numberOfSeeds;
     }
 }
