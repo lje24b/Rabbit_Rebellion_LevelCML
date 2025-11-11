@@ -2447,7 +2447,6 @@ GameObject:
   - component: {fileID: 1263787707}
   - component: {fileID: 1263787708}
   - component: {fileID: 1263787709}
-  - component: {fileID: 1263787710}
   m_Layer: 0
   m_Name: Main Character
   m_TagString: Player
@@ -2620,22 +2619,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2a1135004eb3e41a58b57e81ab899ac2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 10
-  jumpForce: 500
-  isGrounded: 0
-  shouldJump: 0
---- !u!114 &1263787710
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1263787703}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64d35637466b74026abee5f403dff4ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 10
