@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8382032096707312781}
   - component: {fileID: 7261175041727063456}
   - component: {fileID: 5011864406741449015}
-  - component: {fileID: 8771212700936527368}
+  - component: {fileID: 1995578673328345605}
   m_Layer: 0
   m_Name: Remi
   m_TagString: Player
@@ -30,7 +30,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1249815354613541606}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.144847, y: 0.027855152, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 1
@@ -236,7 +236,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 1.2
+  m_GravityScale: 1.5
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -248,7 +248,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &8771212700936527368
+--- !u!114 &1995578673328345605
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -257,13 +257,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1249815354613541606}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a1135004eb3e41a58b57e81ab899ac2, type: 3}
+  m_Script: {fileID: 11500000, guid: 64d35637466b74026abee5f403dff4ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 7
-  jumpForce: 390
-  isGrounded: 1
-  shouldJump: 0
+  jumpForce: 370
+  isGrounded: 0
 --- !u!1001 &300010728247281621
 PrefabInstance:
   m_ObjectHideFlags: 0

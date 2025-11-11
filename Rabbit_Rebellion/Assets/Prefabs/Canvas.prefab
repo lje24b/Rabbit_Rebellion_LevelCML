@@ -254,9 +254,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberOfKeys: 0
-  numberOfCoins: 0
+  numberOfSeeds: 0
   keyText: {fileID: 5614404928310434165}
-  coinText: {fileID: 6279079594689974664}
+  seedText: {fileID: 6279079594689974664}
   audioSource: {fileID: 1254830891429611434}
   keyClip: {fileID: 8300000, guid: 57ebb145a3f89438e8eaa4ac14e480bd, type: 3}
   coinClip: {fileID: 8300000, guid: 24d9f9896fe2f47ee8cb4adea32dfc6c, type: 3}
@@ -369,7 +369,7 @@ GameObject:
   - component: {fileID: 5579523818877514079}
   - component: {fileID: 6279079594689974664}
   m_Layer: 5
-  m_Name: Coin Text
+  m_Name: Seed Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -422,7 +422,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Coins:  '
+  m_text: 'Seeds
+
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 79459efec17a4d00a321bdcc27bbc385, type: 2}
@@ -455,7 +458,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 34
+  m_fontStyle: 35
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
