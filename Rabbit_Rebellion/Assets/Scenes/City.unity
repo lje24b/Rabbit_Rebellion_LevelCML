@@ -17135,6 +17135,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Remi
       objectReference: {fileID: 0}
+    - target: {fileID: 1995578673328345605, guid: 7c110a2a933f34234b0a02501995ae49, type: 3}
+      propertyPath: jumpForce
+      value: 400
+      objectReference: {fileID: 0}
     - target: {fileID: 8771212700936527368, guid: 7c110a2a933f34234b0a02501995ae49, type: 3}
       propertyPath: jumpForce
       value: 370
