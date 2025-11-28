@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Pew_Pew : MonoBehaviour
 {
-     public GameObject bullet;
+    public GameObject bullet;
     public GameObject firePoint;
 
     Animator animator;

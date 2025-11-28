@@ -1,30 +1,45 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
- 
+
 public class PickUp : MonoBehaviour
-{    
-    [SerializeField] GameManager gameManager;
+{
+    [SerializeField] private GameManager gameManager; // assign in Inspector (preferred)
     private bool didCountSeed = false;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        gameManager = GameObject.Find("Canvas").GetComponent<GameManager>();
+        // Auto-find the scene GameManager if not assigned in the inspector
+        if (gameManager == null)
+        {
+            gameManager = FindAnyObjectByType<GameManager>();
+            if (gameManager == null)
+            {
+                Debug.LogError("PickUp: GameManager not assigned and not found in scene!");
+            }
+            else
+            {
+                Debug.Log("PickUp: auto-assigned GameManager -> " + gameManager.name);
+            }
+        }
     }
-
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.tag == "Player" && !didCountSeed)
+        if (other.CompareTag("Player") && !didCountSeed)
         {
             didCountSeed = true;
-            gameManager.numberOfSeeds++;
 
-            // play sounds
-            gameManager.audioSource.clip = gameManager.coinClip;
-            gameManager.audioSource.Play();
+            if (gameManager != null)
+            {
+                gameManager.AddSeed(); // use the GameManager method to update count + UI
+                Debug.Log("PickUp: added seed. New total: " + gameManager.numberOfSeeds);
+            }
+            else
+            {
+                Debug.LogWarning("PickUp: attempted to add seed but gameManager is null.");
+            }
 
+            // play sfx via global SoundManager
+            SoundManagerScript.PlaySound("seedPickUp");
 
             Destroy(gameObject);
         }

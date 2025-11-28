@@ -25,6 +25,8 @@ public class PlayerMovementAnimated : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        animator.SetBool("isFalling", rb.linearVelocity.y < -0.1f && !isGrounded);
+
         // get horizontal input
         float horizontalInput = Input.GetAxis("Horizontal");
 
@@ -46,28 +48,31 @@ public class PlayerMovementAnimated : MonoBehaviour
             animator.SetBool("isRunning", false);
         }
 
-        // jumpy
+        //Jumpy
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
-            //push the rigidbody UP
-            rb.AddForce(transform.up * jumpForce);
-
-            // animate!
-            animator.SetBool("isJumping", true);
+            if (Input.GetButtonDown("Jump") && isGrounded)
+            {
+                rb.AddForce(Vector2.up * jumpForce);
+                animator.SetTrigger("JumpTrigger");
+                isGrounded = false; // immediately prevent returning to idle
+            }
         }
     }
 
-    void OnTriggerStay2D(Collider2D other)
+    void OnTriggerEnter2D(Collider2D collision)
     {
-        isGrounded = true;
-        // animate!
-        animator.SetBool("isJumping", false);
+        if (collision.gameObject.CompareTag("Ground"))
+        {
+            isGrounded = true;
+        }
     }
 
-    void OnTriggerExit2D(Collider2D other)
+    void OnTriggerExit2D(Collider2D collision)
     {
+        if (collision.gameObject.CompareTag("Ground")) 
+        {
         isGrounded = false;
+        }
     }
 }
-
-

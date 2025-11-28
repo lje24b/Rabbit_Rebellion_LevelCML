@@ -16,6 +16,10 @@ public class EnemyDeath : MonoBehaviour
         // lets check to see if it was a BULLET we intersected with...
         if (other.gameObject.tag == "Bullet")
         {
+
+            //Sound effect for enemy deaths
+            SoundManagerScript.PlaySound("enemyDeath");
+
             // destroy bullet so it doesn't keep hitting everyone else
             Destroy(other.gameObject);
 

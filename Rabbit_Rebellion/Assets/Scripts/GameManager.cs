@@ -10,20 +10,60 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI seedText;
 
     public AudioSource audioSource;
-    public AudioClip keyClip;
-    public AudioClip coinClip;
+    public AudioClip coinClip; // optional: assign a clip for game-manager sfx
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    void Awake()
     {
-        audioSource = GetComponent<AudioSource>();
+        // Ensure AudioSource exists on this GameObject
+        if (audioSource == null)
+        {
+            audioSource = GetComponent<AudioSource>();
+            if (audioSource == null)
+            {
+                audioSource = gameObject.AddComponent<AudioSource>();
+            }
+        }
+        audioSource.playOnAwake = false;
     }
 
-    // Update is called once per frame
-    void Update()
+    void Start()
     {
-        keyText.text = "Keys Found: " + numberOfKeys;
+        // Initialize UI once at start
+        UpdateUI();
 
-        seedText.text = "Seeds Stolen: " + numberOfSeeds;
+        // Helpful warnings for missing references
+        if (keyText == null) Debug.LogWarning("GameManager: keyText not assigned in Inspector.");
+        if (seedText == null) Debug.LogWarning("GameManager: seedText not assigned in Inspector.");
+    }
+
+    // Call this whenever counts change
+    public void UpdateUI()
+    {
+        if (keyText != null) keyText.text = "Keys Found: " + numberOfKeys;
+        if (seedText != null) seedText.text = "Seeds Stolen: " + numberOfSeeds;
+    }
+
+    public void AddSeed(int amount = 1)
+    {
+        numberOfSeeds += amount;
+        UpdateUI();
+    }
+
+    public void AddKey(int amount = 1)
+    {
+        numberOfKeys += amount;
+        UpdateUI();
+    }
+
+    // Optional helper to play sfx
+    public void PlaySFX(AudioClip clip)
+    {
+        if (clip == null) return;
+        if (audioSource == null)
+        {
+            Debug.LogWarning("GameManager: audioSource missing when trying to play SFX.");
+            return;
+        }
+        audioSource.PlayOneShot(clip);
     }
 }

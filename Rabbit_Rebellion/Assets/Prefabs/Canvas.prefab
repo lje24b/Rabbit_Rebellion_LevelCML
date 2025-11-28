@@ -258,7 +258,6 @@ MonoBehaviour:
   keyText: {fileID: 5614404928310434165}
   seedText: {fileID: 6279079594689974664}
   audioSource: {fileID: 1254830891429611434}
-  keyClip: {fileID: 8300000, guid: 57ebb145a3f89438e8eaa4ac14e480bd, type: 3}
   coinClip: {fileID: 8300000, guid: 24d9f9896fe2f47ee8cb4adea32dfc6c, type: 3}
 --- !u!82 &1254830891429611434
 AudioSource:
