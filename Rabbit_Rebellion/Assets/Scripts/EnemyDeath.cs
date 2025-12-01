@@ -14,7 +14,7 @@ public class EnemyDeath : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         // lets check to see if it was a BULLET we intersected with...
-        if (other.gameObject.tag == "Bullet")
+        if (other.gameObject.tag == "bullet")
         {
 
             //Sound effect for enemy deaths

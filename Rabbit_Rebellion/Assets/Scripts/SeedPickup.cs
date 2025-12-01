@@ -2,22 +2,22 @@ using UnityEngine;
 
 public class PickUp : MonoBehaviour
 {
-    [SerializeField] private GameManager gameManager; // assign in Inspector (preferred)
+    [SerializeField] private GameManager GameManager; // assign in Inspector (preferred)
     private bool didCountSeed = false;
 
     void Start()
     {
         // Auto-find the scene GameManager if not assigned in the inspector
-        if (gameManager == null)
+        if (GameManager == null)
         {
-            gameManager = FindAnyObjectByType<GameManager>();
-            if (gameManager == null)
+            GameManager = FindAnyObjectByType<GameManager>();
+            if (GameManager == null)
             {
                 Debug.LogError("PickUp: GameManager not assigned and not found in scene!");
             }
             else
             {
-                Debug.Log("PickUp: auto-assigned GameManager -> " + gameManager.name);
+                Debug.Log("PickUp: auto-assigned GameManager -> " + GameManager.name);
             }
         }
     }
@@ -28,10 +28,10 @@ public class PickUp : MonoBehaviour
         {
             didCountSeed = true;
 
-            if (gameManager != null)
+            if (GameManager != null)
             {
-                gameManager.AddSeed(); // use the GameManager method to update count + UI
-                Debug.Log("PickUp: added seed. New total: " + gameManager.numberOfSeeds);
+                GameManager.AddSeed(); // use the GameManager method to update count + UI
+                Debug.Log("PickUp: added seed. New total: " + GameManager.numberOfSeeds);
             }
             else
             {

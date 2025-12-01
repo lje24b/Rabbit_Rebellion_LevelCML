@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 6362043828237049316}
   - component: {fileID: 8121297873754039962}
   - component: {fileID: 4109783837790437457}
+  - component: {fileID: 8087730010745430436}
   m_Layer: 0
   m_Name: Evil_Bot_1
   m_TagString: Untagged
@@ -276,8 +277,8 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
-  m_PlayOnAwake: 1
-  m_Volume: 0.1
+  m_PlayOnAwake: 0
+  m_Volume: 1
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -361,3 +362,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &8087730010745430436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1482646421484644111}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4e3f5cd2966aad489cf1fe89d4a80d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  clip: {fileID: 8300000, guid: 37502c3abf4b20345a76566a1b319f21, type: 3}
+  maxDistance: 8
+  minDistance: 1

@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 5011864406741449015}
   - component: {fileID: 1995578673328345605}
   - component: {fileID: 5767427069451905312}
+  - component: {fileID: 9447026926828337}
   m_Layer: 0
   m_Name: Remi
   m_TagString: Player
@@ -262,6 +263,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 7
   jumpForce: 400
+  fallThreshold: -0.1
+  landingGrace: 0.08
   isGrounded: 0
 --- !u!82 &5767427069451905312
 AudioSource:
@@ -274,7 +277,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: e5116d2c3d17d5646837c633f3df3d95, type: 3}
+  m_Resource: {fileID: 8300000, guid: fa39b55d11fcc954089ea224c0a119cf, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -360,3 +363,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &9447026926828337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1249815354613541606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4615971e140a46468de73ddf103f435, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bullet: {fileID: 5382124168054281124, guid: 592c1f8f97c99410c88dd8076bc33d22, type: 3}
+  firePoint: {fileID: 1249815354613541606}
+  fireForward: 1
+  bulletForce: 1000
