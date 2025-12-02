@@ -8,7 +8,6 @@ public class SoundManagerScript : MonoBehaviour
 
     void Start()
     {
-        // Load clips from Assets/Resources/ (filenames without extensions)
         playerAttackSound = Resources.Load<AudioClip>("playerAttack");
         robot1Sound = Resources.Load<AudioClip>("robot1");
         robot2Sound = Resources.Load<AudioClip>("robot2");
@@ -46,7 +45,7 @@ public class SoundManagerScript : MonoBehaviour
             case "robot2":
                 clipToPlay = robot2Sound;
                 break;
-            case "robot3":            // fixed typo here
+            case "robot3":            
                 clipToPlay = robot3Sound;
                 break;
             case "enemyDeath":
@@ -65,7 +64,6 @@ public class SoundManagerScript : MonoBehaviour
 
         if (clipToPlay != null)
         {
-            // PlayOneShot so it doesn't interrupt other sounds
             audioSrc.PlayOneShot(clipToPlay);
         }
         else

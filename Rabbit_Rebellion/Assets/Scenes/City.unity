@@ -32541,10 +32541,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Remi
       objectReference: {fileID: 0}
-    - target: {fileID: 5767427069451905312, guid: 7c110a2a933f34234b0a02501995ae49, type: 3}
-      propertyPath: m_Resource
-      value: 
-      objectReference: {fileID: 8300000, guid: e5116d2c3d17d5646837c633f3df3d95, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
