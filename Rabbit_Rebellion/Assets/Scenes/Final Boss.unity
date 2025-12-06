@@ -229942,6 +229942,7 @@ GameObject:
   - component: {fileID: 560431625}
   - component: {fileID: 560431624}
   - component: {fileID: 560431623}
+  - component: {fileID: 560431626}
   m_Layer: 0
   m_Name: Crimson Blight
   m_TagString: Untagged
@@ -230041,6 +230042,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &560431626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 560431622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 889648b5b9ffaa646b4e6dc5b9e2c3e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -230259,11 +230272,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 566129663912082775, guid: 7c110a2a933f34234b0a02501995ae49, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -10.8846
+      value: -10.76
       objectReference: {fileID: 0}
     - target: {fileID: 566129663912082775, guid: 7c110a2a933f34234b0a02501995ae49, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.005721
+      value: -3.48
       objectReference: {fileID: 0}
     - target: {fileID: 566129663912082775, guid: 7c110a2a933f34234b0a02501995ae49, type: 3}
       propertyPath: m_LocalPosition.z
