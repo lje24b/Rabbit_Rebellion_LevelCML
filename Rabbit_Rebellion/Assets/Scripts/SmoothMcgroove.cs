@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class SmoothMcgroove : MonoBehaviour
 {
-     [SerializeField] private Vector3 offset;
+    [SerializeField] private Vector3 offset;
     [SerializeField] private float damping;
 
     public Transform target;
