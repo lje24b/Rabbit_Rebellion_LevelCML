@@ -1,5 +1,7 @@
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
+using System.Collections;
 
 public class GameManager : MonoBehaviour
 {
@@ -11,6 +13,14 @@ public class GameManager : MonoBehaviour
 
     public AudioSource audioSource;
     public AudioClip coinClip; // optional: assign a clip for game-manager sfx
+
+    public Vector3 spawnPoint;
+
+    public int numberOfPickups = 0;
+    public int numberOfLives = 3;
+
+    public TextMeshProUGUI scoreText;
+    public TextMeshProUGUI livesText;
 
     void Awake()
     {
@@ -28,12 +38,19 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
+        numberOfSeeds = 0;    
+        numberOfKeys = 0;
+        numberOfPickups = 0;
+        numberOfLives = 3;
+
         // Initialize UI once at start
         UpdateUI();
 
         // Helpful warnings for missing references
         if (keyText == null) Debug.LogWarning("GameManager: keyText not assigned in Inspector.");
         if (seedText == null) Debug.LogWarning("GameManager: seedText not assigned in Inspector.");
+
+        spawnPoint = new Vector3(0, 0, 0);
     }
 
     // Call this whenever counts change
@@ -41,6 +58,15 @@ public class GameManager : MonoBehaviour
     {
         if (keyText != null) keyText.text = "Keys Found: " + numberOfKeys;
         if (seedText != null) seedText.text = "Seeds Stolen: " + numberOfSeeds;
+
+        if (scoreText != null) scoreText.text = "Keys: " + numberOfPickups;
+        if (livesText != null) livesText.text = "Lives: " + numberOfLives;
+    }
+
+    public void UpdateLivesUI()
+    {
+        if (livesText != null)
+            livesText.text = "Lives: " + numberOfLives;
     }
 
     public void AddSeed(int amount = 1)
@@ -55,7 +81,6 @@ public class GameManager : MonoBehaviour
         UpdateUI();
     }
 
-    // Optional helper to play sfx
     public void PlaySFX(AudioClip clip)
     {
         if (clip == null) return;
@@ -65,5 +90,36 @@ public class GameManager : MonoBehaviour
             return;
         }
         audioSource.PlayOneShot(clip);
+    }
+
+    // -----------------------------
+    // NEW: Life Management & Respawn
+    // -----------------------------
+    public void LoseLife(GameObject player)
+    {
+        numberOfLives--;
+        UpdateLivesUI(); // update UI immediately
+
+        if (numberOfLives <= 0)
+        {
+            // Show 0 lives for a moment, then reload scene
+            StartCoroutine(ReloadSceneAfterDelay(0.5f));
+        }
+        else
+        {
+            // Respawn player at spawn point
+            player.transform.position = spawnPoint;
+
+            // Reset velocity if Rigidbody2D exists
+            Rigidbody2D rb = player.GetComponent<Rigidbody2D>();
+            if (rb != null) rb.linearVelocity = Vector2.zero;
+        }
+    }
+
+    private IEnumerator ReloadSceneAfterDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        numberOfLives = 3; // reset lives
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }

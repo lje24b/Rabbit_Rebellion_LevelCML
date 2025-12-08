@@ -1,19 +1,47 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+
 public class EPICFAIL : MonoBehaviour
 {
-    public void OnTriggerEnter2D(Collider2D other)
+    GameManager gameManager;
+    private bool isColliding = false;
+
+    private void Start()
     {
-        if (other.gameObject.tag == "Player") 
+        gameManager = GameObject.Find("Canvas").GetComponent<GameManager>();
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (isColliding) return;
+
+        if (other.gameObject.CompareTag("Player"))
         {
+            isColliding = true;
 
-            // write something to the Console just to make 
-            // sure this function is being called
-            Debug.Log("****#### there went Slimey! ####****");
+            // ↓↓↓ THIS WAS MISSING ↓↓↓
+            gameManager.numberOfLives--;
+            gameManager.UpdateLivesUI();   // <-- UPDATE THE UI HERE
+            // ↑↑↑ ADD THIS LINE ↑↑↑
 
-            // use SceneManager to load the CURRENT scene again (a reset)
-            // the LoadScene function just wants a NUMBER of the scene to load
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            if (gameManager.numberOfLives <= 0)
+            {
+                gameManager.numberOfLives = 3;
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            }
+            else
+            {
+                other.gameObject.transform.position = gameManager.spawnPoint;
+            }
+
+            StartCoroutine(Reset());
         }
+    }
+
+    IEnumerator Reset()
+    {
+        yield return new WaitForSeconds(1);
+        isColliding = false;
     }
 }
