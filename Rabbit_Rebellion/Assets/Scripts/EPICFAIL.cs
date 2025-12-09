@@ -4,44 +4,67 @@ using UnityEngine.SceneManagement;
 
 public class EPICFAIL : MonoBehaviour
 {
-    GameManager gameManager;
+    [Header("Assign GameManager here or it will try to find Canvas")]
+    [SerializeField] private GameManager gameManager;
+
+    [Header("Collision Settings")]
     private bool isColliding = false;
 
     private void Start()
     {
-        gameManager = GameObject.Find("Canvas").GetComponent<GameManager>();
+        // Try to find GameManager if not assigned
+        if (gameManager == null)
+        {
+            GameObject canvas = GameObject.Find("Canvas");
+            if (canvas != null)
+            {
+                gameManager = canvas.GetComponent<GameManager>();
+                if (gameManager == null)
+                {
+                    Debug.LogError("EPICFAIL: GameManager component not found on Canvas!");
+                }
+            }
+            else
+            {
+                Debug.LogError("EPICFAIL: No Canvas found in scene!");
+            }
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (isColliding) return;
 
-        if (other.gameObject.CompareTag("Player"))
+        if (other.CompareTag("Player"))
         {
             isColliding = true;
 
-            // ↓↓↓ THIS WAS MISSING ↓↓↓
-            gameManager.numberOfLives--;
-            gameManager.UpdateLivesUI();   // <-- UPDATE THE UI HERE
-            // ↑↑↑ ADD THIS LINE ↑↑↑
+            if (gameManager != null)
+            {
+                gameManager.numberOfLives--;
+                gameManager.UpdateLivesUI();
 
-            if (gameManager.numberOfLives <= 0)
-            {
-                gameManager.numberOfLives = 3;
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-            }
-            else
-            {
-                other.gameObject.transform.position = gameManager.spawnPoint;
+                if (gameManager.numberOfLives <= 0)
+                {
+                    gameManager.numberOfLives = 3;
+                    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+                    return; // exit early to avoid respawning player below
+                }
             }
 
-            StartCoroutine(Reset());
+            // Respawn player at spawn point
+            if (gameManager != null && gameManager.spawnPoint != null)
+            {
+                other.transform.position = gameManager.spawnPoint;
+            }
+
+            StartCoroutine(ResetCollision());
         }
     }
 
-    IEnumerator Reset()
+    private IEnumerator ResetCollision()
     {
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(1f);
         isColliding = false;
     }
 }

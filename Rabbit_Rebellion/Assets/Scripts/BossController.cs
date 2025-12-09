@@ -4,37 +4,36 @@ using System.Collections;
 [RequireComponent(typeof(Animator))]
 public class BossController : MonoBehaviour
 {
-    [Header("Animator parameters")]
+    [Header("Animator Parameters")]
     public Animator animator;
 
-    [Tooltip("If true the script will use AttackIndex + AttackTrigger. If false, it will use the individual triggers in attackTriggerNames.")]
+    [Tooltip("Use attack index to select attacks via a single trigger.")]
     public bool useAttackIndex = true;
 
-    [Tooltip("Name of the trigger used to start an attack (used with AttackIndex).")]
     public string attackTriggerName = "Attack";
-
-    [Tooltip("Name of the int parameter used to select which attack (0..2).")]
     public string attackIndexParam = "AttackIndex";
 
-    [Tooltip("If not using index, list the trigger names for Attack 0,1,2 respectively.")]
+    [Tooltip("If not using index, list individual trigger names.")]
     public string[] attackTriggerNames = new string[] { "Attack1", "Attack2", "Attack3" };
 
-    [Header("Attack timing")]
-    public float timeBetweenAttacks = 2f;      
-    public bool autoAttack = false;            
-    public bool randomizeAttacks = false;      
+    [Header("Attack Timing")]
+    public float timeBetweenAttacks = 2f;
+    public bool autoAttack = true;
+    public bool randomizeAttacks = false;
 
     [Header("Health")]
     public int maxHealth = 100;
-    int currentHealth;
+    private int currentHealth;
 
     [Header("Death")]
     public string dieTriggerName = "Die";
-    public float disableAfterDeathDelay = 2f;  
+    public float disableAfterDeathDelay = 2f;
 
-    bool canAttack = true;
-    bool isDead = false;
-    Coroutine autoAttackRoutine = null;
+    private bool canAttack = true;
+    private bool isDead = false;
+    private Coroutine autoAttackRoutine = null;
+
+    private int attackCounter = 0; // Tracks which attack to use next
 
     void Awake()
     {
@@ -63,10 +62,15 @@ public class BossController : MonoBehaviour
         }
         else
         {
-            if (attackTriggerNames != null && attackTriggerNames.Length > attackIndex && !string.IsNullOrEmpty(attackTriggerNames[attackIndex]))
+            if (attackTriggerNames != null && attackTriggerNames.Length > attackIndex &&
+                !string.IsNullOrEmpty(attackTriggerNames[attackIndex]))
+            {
                 animator.SetTrigger(attackTriggerNames[attackIndex]);
+            }
             else
+            {
                 Debug.LogWarning($"BossController: attackTriggerNames not set for index {attackIndex}");
+            }
         }
 
         StartCoroutine(AttackCooldown());
@@ -81,16 +85,21 @@ public class BossController : MonoBehaviour
 
     IEnumerator AutoAttackLoop()
     {
-        yield return new WaitForSeconds(1.0f);
+        yield return new WaitForSeconds(1f);
 
         while (!isDead)
         {
             if (canAttack)
             {
-                int idx = randomizeAttacks ? Random.Range(0, 3) : 0;
-                if (!randomizeAttacks)
+                int idx;
+                if (randomizeAttacks)
                 {
-                    idx = (int)(Time.time / timeBetweenAttacks) % 3;
+                    idx = Random.Range(0, 3);
+                }
+                else
+                {
+                    idx = attackCounter % 3;
+                    attackCounter++;
                 }
 
                 DoAttack(idx);
@@ -117,7 +126,8 @@ public class BossController : MonoBehaviour
 
         animator.SetTrigger(dieTriggerName);
 
-        if (autoAttackRoutine != null) StopCoroutine(autoAttackRoutine);
+        if (autoAttackRoutine != null)
+            StopCoroutine(autoAttackRoutine);
 
         StartCoroutine(DisableAfterDelay(disableAfterDeathDelay));
     }
@@ -128,8 +138,17 @@ public class BossController : MonoBehaviour
         gameObject.SetActive(false);
     }
 
+    // ===== AnimationEvent Functions =====
+    // These are called from AnimationEvents in your animation clips
     public void OnAttackEvent_SpawnProjectile(int attackIndex)
     {
-        Debug.Log($"Spawn projectile for attack {attackIndex}");
+        Debug.Log($"[Boss] Spawn projectile for attack {attackIndex}");
+        // TODO: spawn projectile prefab depending on attackIndex
+    }
+
+    public void OnAttackEvent_DealDamage(int attackIndex)
+    {
+        Debug.Log($"[Boss] Deal damage for attack {attackIndex}");
+        // TODO: apply damage to player
     }
 }
