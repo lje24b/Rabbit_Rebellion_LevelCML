@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: fe909838774524648bbb19aab1902f3a
+  - enabled: 1
     path: Assets/Scenes/Wasteland_Level.unity
     guid: 71fa5f3fdb7e840fcba4da49ad13262e
   - enabled: 1
